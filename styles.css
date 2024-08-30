@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #f0f0f0;
     color: #333;
     margin: 0;
     padding: 0;
@@ -9,15 +9,20 @@ body {
 header {
     background-color: #004d00;
     color: white;
+    padding: 20px 0;
     text-align: center;
-    padding: 20px;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 36px;
+    font-weight: bold;
 }
 
 nav ul {
-    list-style: none;
+    list-style-type: none;
+    margin: 0;
     padding: 0;
-    text-align: center;
-    background-color: #333;
 }
 
 nav ul li {
@@ -28,33 +33,69 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
+    font-size: 18px;
 }
 
-section {
-    padding: 20px;
-    margin: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+nav ul li a:hover {
+    text-decoration: underline;
 }
 
-.galeria {
+.sobre, .videos, .imagens, .patrocinador {
+    padding: 50px;
+    text-align: center;
+}
+
+.video-grid {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
-.galeria img {
-    width: 200px;
+.image-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.image-grid img {
+    max-width: 45%;
     height: auto;
+    border: 2px solid #333;
+    border-radius: 5px;
+}
+
+.patrocinador {
+    background-color: #e0e0e0;
+    padding: 20px;
+    margin-top: 30px;
     border-radius: 10px;
 }
 
 footer {
     background-color: #333;
     color: white;
+    padding: 20px;
     text-align: center;
-    padding: 10px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+}
+
+footer .social ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer .social ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer .social ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer p {
+    margin-top: 20px;
+    font-size: 14px;
 }
